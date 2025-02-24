@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+/* css variables */
+:root {
+  --dark-violet: hsl(256, 26%, 20%);
+  --greyish-blue: hsl(216, 30%, 68%);
+  --very-dark-violet: hsl(270, 9%, 17%);
+  --dark-greyish-violet: hsl(273, 4%, 51%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  --section-padding: 18px 60px;
+}
+/* css resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style-type: none;
+}
+
+/* utility classes/styles - apply to multiple sections in the page*/
+body {
+  font-family: "Karla", serif;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "DM Serif Display", serif;
+}
+.action-link {
+  border: 1px solid var(--dark-greyish-violet);
+  color: var(--dark-greyish-violet);
+  padding: 8px 16px;
+}
+header,
+section,
+footer {
+  padding: var(--section-padding);
+}
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav a {
+  margin: 0px 12px;
+  text-transform: uppercase;
+  color: var(--dark-greyish-violet);
+}
+
+header .action-link {
+  border-color: var(--very-dark-violet);
+  color: var(--very-dark-violet);
+}
+/* hero section */
+
+.hero {
+  display: flex;
+  align-items: center;
+  background-color: var(--dark-violet);
+  color: var(--very-light-gray);
+}
+.hero .text-side {
+  flex: 1;
+  padding-right: 30px;
+}
+.hero .text-side h1 {
+  font-size: 55px;
+}
+.hero .text-side p {
+  font-size: 20px;
+}
+.hero .action-link {
+  border-color: inherit;
+  color: inherit;
+  display: inline-block;
+  margin-top: 30px;
+}
+.hero .image-side {
+  flex: 1;
+}
+.hero .image-side img {
+  width: 100%;
+  position: relative;
+  top: 100px;
+}
